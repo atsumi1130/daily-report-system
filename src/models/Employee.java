@@ -20,7 +20,7 @@ import javax.persistence.Table;
             ),
 
     @NamedQuery(
-            name = "getEmployeeCount",  //従業員情報の全件数を取得
+            name = "getEmployeesCount",  //従業員情報の全件数を取得
             query = "SELECT COUNT(e) FROM Employee AS e"
             ),
     @NamedQuery(
