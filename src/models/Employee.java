@@ -29,7 +29,7 @@ import javax.persistence.Table;
             ),
     @NamedQuery(
             name = "checkLoginCodeAndPassword",  //従業員ログイン時に社員番号とパスワードが正しいか確認
-            query = "SELECT e FROM Employee AS e WHERE e.delete_flag = 0 AND e.code = :code AND e.password = :password"
+            query = "SELECT e FROM Employee AS e WHERE e.delete_flag = 0 AND e.code = :code AND e.password = :pass"
             )
 
 })
