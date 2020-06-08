@@ -61,10 +61,10 @@ public class Report {
         this.id = id;
     }
 
-    public Employee getEmployee(){
+    public Employee getEmployee() {
         return employee;
     }
-    public void setEmployee(Employee employee){
+    public void setEmployee(Employee employee) {
         this.employee = employee;
     }
 
