@@ -15,7 +15,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-@Table(name = "report")
+@Table(name = "reports")
 @NamedQueries({
     @NamedQuery(
             name = "getAllReports",
@@ -53,54 +53,59 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
-
-    public Integer getId(){
+    public Integer getId() {
         return id;
     }
-    public void setId(Integer id){
+
+    public void setId(Integer id) {
         this.id = id;
     }
 
     public Employee getEmployee() {
         return employee;
     }
+
     public void setEmployee(Employee employee) {
         this.employee = employee;
     }
 
-    public Date getReport_date(){
+    public Date getReport_date() {
         return report_date;
     }
-    public void setReport_date(Date report_date){
+
+    public void setReport_date(Date report_date) {
         this.report_date = report_date;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
     }
-    public void setTitle(String title){
+
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public String getContent(){
+    public String getContent() {
         return content;
     }
-    public void setContent(String content){
+
+    public void setContent(String content) {
         this.content = content;
     }
 
-    public Timestamp getCreated_at(){
+    public Timestamp getCreated_at() {
         return created_at;
     }
-    public void setCreated_at(Timestamp created_at){
+
+    public void setCreated_at(Timestamp created_at) {
         this.created_at = created_at;
     }
 
-    public Timestamp getUpdated_at(){
+    public Timestamp getUpdated_at() {
         return updated_at;
     }
-    public void setUpdated_at(Timestamp updated_at){
+
+    public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
-
 }
