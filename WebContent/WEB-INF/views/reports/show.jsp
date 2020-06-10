@@ -35,9 +35,14 @@
                                 <fmt:formatDate value="${report.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" />
                             </td>
                         </tr>
+                        <tr>
+                            <th>いいね！</th>
+                            <td><c:out value="${good.goodCount}" /></td>
+                        </tr>
                     </tbody>
                 </table>
 
+                <p><a href="<c:url value='/reports/good?action=good' />">この投稿にいいねをする</a></p>
                 <c:if test="${sessionScope.login_employee.id == report.employee.id}">
                     <p><a href="<c:url value='/reports/edit?id=${report.id}' /> ">この日報を編集する</a></p>
                 </c:if>
